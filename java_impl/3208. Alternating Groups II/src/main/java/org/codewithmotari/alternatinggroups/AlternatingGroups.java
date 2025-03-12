@@ -17,12 +17,42 @@ package org.codewithmotari.alternatinggroups;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+import java.util.Collections;
+import java.util.LinkedList;
+
 @SpringBootApplication
-public class Application {
+public class AlternatingGroups {
+
+    public int numberOfAlternatingGroups(int[] colors, int k) {
+        int n = colors.length;
+        int count = 0;
+        int validSize = 1;
+
+        for (int i = 1; i < n + k - 1; i++)
+        {
+            if (colors[i % n] != colors[(i - 1) % n])
+            {
+                validSize++;
+                if (validSize >= k)
+                {
+                    count++;
+                }
+            }
+            else
+            {
+                validSize = 1;
+            }
+        }
+
+        return count;
+    }
 
     public static void main(String[] args) {
-        SpringApplication.run(Application.class, args);
-        System.out.println("Yay it ran successfully");
+        SpringApplication.run(AlternatingGroups.class, args);
+        AlternatingGroups a=new AlternatingGroups();
+        int []colors={0,0,0,1,0,1,0,1,0,1};
+        int ab=a.numberOfAlternatingGroups(colors,2);
+        System.out.println(ab);
     }
 
 }

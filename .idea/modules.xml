@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/HelloWorldFlask/HelloWorldFlask.iml" filepath="$PROJECT_DIR$/HelloWorldFlask/HelloWorldFlask.iml" />
-      <module fileurl="file://$PROJECT_DIR$/java_impl/3208. Alternating Groups II/alternatingGroups.iml" filepath="$PROJECT_DIR$/java_impl/3208. Alternating Groups II/alternatingGroups.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/mbivu.iml" filepath="$PROJECT_DIR$/.idea/mbivu.iml" />
     </modules>
   </component>
