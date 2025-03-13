@@ -26,6 +26,12 @@ public class PositiveVsNegativeIntegers {
 
     public static void main(String[] args) {
         SpringApplication.run(PositiveVsNegativeIntegers.class, args);
+
+        //Running This Program
+        PositiveVsNegativeIntegers p=new PositiveVsNegativeIntegers();
+        int[] sample={-1,0,2,6,7,9};
+        System.out.println(maximumCount(sample));
+        //output is 4
     }
 
 }
